@@ -1,0 +1,18 @@
+﻿# This file determines the build process for your app if you are hosting it via AWS Amplify.
+# If you are not hosting your app using AWS amplify, this file can be deleted.
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: /build/
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
