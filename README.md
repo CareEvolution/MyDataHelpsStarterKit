@@ -19,8 +19,18 @@ You should see the default project home page appear and populate itself with dat
 
 Navigate to other routes defined in ```src/index.js``` to see more pre-built views, or build your own!
 
+## Exploring the Code
+
+A handful of views are set up already that you can see referenced in MyDataHelps.js.
+
+- Some views, such as "ConnectEhr", just include the pre-built views in MyDataHelpsUI.  
+- "Home" and "DeviceData" views showcase how you can use or reorder the various MyDataHelpsUI components
+- "TaskProgress" is a custom view with a custom component (inside src/components/TaskProgress) showing how you can write your own components
+
 ## Hosting your project
 
 To be embedded inside MyDataHelps, your custom view must be hosted on the internet.  
 
 [View the Guide on Hosting Views](https://developer.mydatahelps.org/views/hosting.html)
+
+Once you have hosted your view, use the "App Layout" tab in your project to point to the url(s) for your view(s).
