@@ -1,0 +1,34 @@
+## Overview
+
+Explain your changes, including any issues or relevant context about why they are needed.
+
+## Security
+
+REMINDER: All file contents are public.
+
+- [ ] I have ensured no secure credentials or sensitive information remain in code, metadata, comments, etc.
+  - [ ] Please verify that you double checked that .storybook/preview.js does not contain your participant access key details. 
+  - [ ] There are no temporary testing changes committed such as API base URLs, access tokens, print/log statements, etc.
+- [ ] These changes do not introduce any security risks, or any such risks have been properly mitigated.
+
+Describe briefly what security risks you considered, why they don't apply, or how they've been mitigated.
+
+## Checklist
+
+### Testing
+- [ ] MyDataHelps iOS app
+- [ ] MyDataHelps Android app
+- [ ] [MyDataHelps website](mydatahelps.org)
+
+### Documentation
+- [ ] I have added relevant Storybook updates to this PR as well.
+- [ ] If this feature requires a developer doc update, tag @CareEvolution/api-docs.
+
+Consider "Squash and merge" as needed to keep the commit history reasonable on `main`.
+
+## Reviewers
+
+Assign to the appropriate reviewer(s). Minimally, a second set of eyes is needed ensure no non-public information is published. Consider also including:
+- Subject-matter experts
+- Style/editing reviewers
+- Others requested by the content owner
