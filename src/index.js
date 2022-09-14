@@ -21,6 +21,7 @@ ReactDOM.render(
 	<React.StrictMode>
 		<Router>
 			<Routes>
+				<Route path="/" element={<Home />} />
 				<Route path="/home/" element={<Home />} />
 				<Route path="/notifications/" element={<Notifications />} />
 				<Route path="/surveytasks/" element={<SurveyTasks />} />
