@@ -8,24 +8,32 @@ This repository uses the components from [MyDataHelpsUI](https://github.com/Care
 
 1. Clone/copy/fork the code in this repository to your local machine
 2. ```npm install```
-3. Get a [participant access token](https://developer.mydatahelps.org/sdk/participant_tokens.html) - either using browser dev tools while logged in as a test participant, or by using the REST API.
+3. Get a [participant access token](https://developer.mydatahelps.org/sdk/participant_tokens.html) - either using browser dev tools while logged in as a test participant at mydatahelps.org, or by using the REST API.
+    - Hint: if using browser dev tools, examine the response on the request to https://mydatahelps.org/identityserver/connect/token.
 4. Create a .env file with a single line:
 ```
 REACT_APP_PARTICIPANT_ACCESS_TOKEN={your access token}
 ```
 5. ```npm start```
 
-You should see the default project home page appear and populate itself with data from your participant.
+You should see the default project home page appear and populate itself with data from your participant
 
-Navigate to other routes defined in ```src/index.js``` to see more pre-built views, or build your own!
+Navigate to other routes defined in ```src/index.js``` to see more pre-built views, edit existing views, or build your own!
+
+**Important:** *These views are static, based on your participant's data at the time the page is loaded. To interact with your view, follow the instructions in [Hosting your project](#hosting-your-project) to embed your view within MyDataHelps.* 
 
 ## Exploring the Code
 
-A handful of views are set up already that you can see referenced in MyDataHelps.js.
+A handful of views have been set up already to walk you through various use cases that you may encounter when building your custom view.
 
-- Some views, such as "ConnectEhr", just include the pre-built views in MyDataHelpsUI.  
-- "Home" and "DeviceData" views showcase how you can use or reorder the various MyDataHelpsUI components
-- "TaskProgress" is a custom view with a custom component (inside src/components/TaskProgress) showing how you can write your own components
+#### I want to use a pre-built view from MyDataHelpsUI:
+"ConnectEhr" 
+
+#### I want to reorder the various MyDataHelpsUI components to make my own view:
+- "Home" and "DeviceData" views 
+
+#### I want to build my own custom components and views
+- "TaskProgress" is a custom view with a custom component (inside src/components/TaskProgress)
 
 ## Hosting your project
 
