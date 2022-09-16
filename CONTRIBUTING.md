@@ -1,8 +1,8 @@
 [![License](https://img.shields.io/github/license/CareEvolution/MyDataHelpsStarterKit)](https://github.com/CareEvolution/MyDataHelpsStarterKit)
 
-## How to contribute to MyDataHelpsUI
+## How to contribute to MyDataHelpsStarterKit
 
-#### **Do you want to use MyDataHelpsUI as a starting point for your project?**
+#### **Do you want to use MyDataHelpsStarterKit as a starting point for your project?**
 * Fork or clone this repo locally and start to tailor the visualization to support the use case that your study requires. 
 * Learn about Views and [how to integrate your custom views into a MyDataHelps project](https://developer.mydatahelps.org/views/)
 
