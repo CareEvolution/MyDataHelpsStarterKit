@@ -21,7 +21,6 @@ Describe briefly what security risks you considered, why they don't apply, or ho
 - [ ] [MyDataHelps website](mydatahelps.org)
 
 ### Documentation
-- [ ] I have added relevant Storybook updates to this PR as well.
 - [ ] If this feature requires a developer doc update, tag @CareEvolution/api-docs.
 
 Consider "Squash and merge" as needed to keep the commit history reasonable on `main`.
