@@ -1,5 +1,4 @@
-﻿import React from 'react'
-import { NotificationsView } from "@careevolution/mydatahelps-ui"
+﻿import { NotificationsView } from "@careevolution/mydatahelps-ui"
 
 export default function () {
 	/* Includes the pre-packaged NotificationsView from MyDataHelpsUI */

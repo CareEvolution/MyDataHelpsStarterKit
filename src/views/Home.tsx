@@ -1,5 +1,4 @@
-﻿import React from 'react'
-import { ConnectEhr, Layout, StatusBarBackground, ProjectHeader, Card, MostRecentNotification, SurveyTaskList, ConnectFitbit, ProjectSupport } from "@careevolution/mydatahelps-ui"
+﻿import { ConnectEhr, Layout, StatusBarBackground, ProjectHeader, Card, MostRecentNotification, SurveyTaskList, ConnectFitbit, ProjectSupport } from "@careevolution/mydatahelps-ui"
 import MyDataHelps from "@careevolution/mydatahelps-js"
 
 export default function () {

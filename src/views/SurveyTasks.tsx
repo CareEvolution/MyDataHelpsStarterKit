@@ -1,5 +1,4 @@
-﻿import React from 'react'
-import { SurveyTasksView } from "@careevolution/mydatahelps-ui"
+﻿import { SurveyTasksView } from "@careevolution/mydatahelps-ui"
 
 export default function () {
 	/* Includes the pre-packaged "SurveyTasksView" from MyDataHelpsUI */
