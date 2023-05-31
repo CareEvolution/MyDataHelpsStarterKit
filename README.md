@@ -2,7 +2,7 @@
 
 This starter kit should provide a quick jumping off point to creating your own [MyDataHelps Custom Views](https://developer.mydatahelps.org/views/).
 
-This repository uses the components from [MyDataHelpsUI](https://github.com/CareEvolution/MyDataHelpsUI), which contains many pre-built and localized components that are commonly useful in custom views.  It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository uses the components from [MyDataHelpsUI](https://github.com/CareEvolution/MyDataHelpsUI), which contains many pre-built and localized components that are commonly useful in custom views.  It was bootstrapped with [Vite](https://vitejs.dev).
 
 ## Starting Development
 
@@ -14,11 +14,11 @@ This repository uses the components from [MyDataHelpsUI](https://github.com/Care
 ```
 REACT_APP_PARTICIPANT_ACCESS_TOKEN={your access token}
 ```
-5. ```npm start```
+5. ```npm run dev```
 
 You should see the default project home page appear and populate itself with data from your participant
 
-Navigate to other routes defined in ```src/index.js``` to see more pre-built views, edit existing views, or build your own!
+Navigate to other routes defined in ```src/main.tsx``` to see more pre-built views, edit existing views, or build your own!
 
 **Important:** *Views examined locally are static and reflect your participant's data at the time the page is loaded. To interact with your view, follow the instructions in [Hosting your project](#hosting-your-project) to embed your view within MyDataHelps.* 
 
