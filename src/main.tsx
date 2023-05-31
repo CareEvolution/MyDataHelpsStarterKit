@@ -16,7 +16,7 @@ import TaskProgress from './components/TaskProgress/TaskProgress';
 import MyDataHelps from '@careevolution/mydatahelps-js';
  
 if (window.location.hostname === "localhost") {
-	MyDataHelps.setParticipantAccessToken({ "access_token": process.env.REACT_APP_PARTICIPANT_ACCESS_TOKEN ?? "", "expires_in": 21600, "token_type": "Bearer" }, "https://mydatahelps.org/");
+	MyDataHelps.setParticipantAccessToken({ "access_token": import.meta.env.VITE_PARTICIPANT_ACCESS_TOKEN, "expires_in": 21600, "token_type": "Bearer" }, "https://mydatahelps.org/");
 }
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

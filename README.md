@@ -12,7 +12,7 @@ This repository uses the components from [MyDataHelpsUI](https://github.com/Care
     - Hint: if using browser dev tools, examine the response on the request to https://mydatahelps.org/identityserver/connect/token.
 4. Create a .env file with a single line:
 ```
-REACT_APP_PARTICIPANT_ACCESS_TOKEN={your access token}
+VITE_PARTICIPANT_ACCESS_TOKEN={your access token}
 ```
 5. ```npm run dev```
 
