@@ -1,5 +1,4 @@
-﻿import React from 'react'
-import MyDataHelps from "@careevolution/mydatahelps-js"
+﻿import MyDataHelps from "@careevolution/mydatahelps-js"
 import { PlatformSpecificContent, Layout, Card, StatusBarBackground, ConnectFitbit, FitbitDevices, DeviceDataMonthCharts, Action } from "@careevolution/mydatahelps-ui"
 
 export default function () {

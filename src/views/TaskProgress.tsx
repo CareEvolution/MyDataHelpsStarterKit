@@ -1,5 +1,4 @@
-﻿import React from 'react'
-import { Layout, StatusBarBackground } from "@careevolution/mydatahelps-ui"
+﻿import { Layout, StatusBarBackground } from "@careevolution/mydatahelps-ui"
 import TaskProgress from '../components/TaskProgress/TaskProgress';
 
 export default function () {

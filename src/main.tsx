@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import {
 	BrowserRouter as Router,
 	Routes,
@@ -13,14 +13,15 @@ import DeviceData from './views/DeviceData';
 import ConnectEhr from './views/ConnectEhr';
 import ExternalAccounts from "./views/ExternalAccounts";
 import TaskProgress from './components/TaskProgress/TaskProgress';
-
+import MyDataHelps from '@careevolution/mydatahelps-js';
+ 
 if (window.location.hostname === "localhost") {
-	window.MyDataHelps.setParticipantAccessToken({ "access_token": process.env.REACT_APP_PARTICIPANT_ACCESS_TOKEN, "expires_in": 21600, "token_type": "Bearer" }, "https://mydatahelps.org/");
+	MyDataHelps.setParticipantAccessToken({ "access_token": import.meta.env.VITE_PARTICIPANT_ACCESS_TOKEN, "expires_in": 21600, "token_type": "Bearer" }, "https://mydatahelps.org/");
 }
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
-		<Router>
+	  <Router>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/home/" element={<Home />} />
@@ -34,5 +35,4 @@ ReactDOM.render(
 			</Routes>
 		</Router>
 	</React.StrictMode>,
-	document.getElementById('root')
 );
