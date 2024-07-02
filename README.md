@@ -41,7 +41,7 @@ Once you have the token, store it in the `.env.development` file as explained ab
 2. Use the `.env.development` file (not `.env`) so the token is not deployed in production.
 2. The starter kit will only use the token from the environment file when running in development mode. When the custom view is displayed within MyDataHelps, the system will automatically provide a token for the current participant.
 
-## Production Workflow
+## Using Your View in Production
 
 Your custom view must be hosted on the internet before MyDataHelps can use it. We recommend using a CI/CD process to automatically build and deploy your view. See the [hosting guide](https://developer.mydatahelps.org/views/hosting.html) for recommendations and best practices. 
 
