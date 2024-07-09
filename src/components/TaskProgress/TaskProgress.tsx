@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { Card, LoadingIndicator, TextBlock } from "@careevolution/mydatahelps-ui"
 import MyDataHelps, { Guid, SurveyTask, SurveyTaskQueryParameters } from '@careevolution/mydatahelps-js';
 import "./TaskProgress.css"
