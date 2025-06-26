@@ -19,8 +19,8 @@ customHeaders:
                 script-src 'self'; 
                 object-src 'self'; 
                 style-src 'self' 'unsafe-inline';
-                img-src 'self' data: mydatahelps.org http://localhost:*; 
+                img-src 'self' data: mydatahelps.org rkstudio.careevolution.com http://localhost:*; 
                 media-src 'self'; 
                 frame-src 'self'; 
                 font-src 'self'; 
-                connect-src 'self' http://localhost:* mydatahelps.org;"
+                connect-src 'self' http://localhost:* mydatahelps.org rkstudio.careevolution.com;"
