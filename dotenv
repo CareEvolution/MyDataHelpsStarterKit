@@ -1,0 +1,2 @@
+VITE_PARTICIPANT_ACCESS_TOKEN="YOUR_TOKEN_HERE"
+VITE_MDH_ENDPOINT="https://designer.mydatahelps.org"

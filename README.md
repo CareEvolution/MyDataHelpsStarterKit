@@ -10,12 +10,10 @@ You will normally start by developing and testing your custom view in a local en
 
 1. Clone/fork the code in this repository to your local machine.
 2. Run `npm install`.
-3. Get a participant access token - see below.
-4. Create a file named `.env.development` with a single line:
-```
-VITE_PARTICIPANT_ACCESS_TOKEN=your_access_token
-```
-5. Run `npm run dev`.
+3. Get a participant access token - see below for details.
+4. Copy the file `dotenv` to create a file named `.env.development`.
+5. Edit the environment file to specify your participant access token.
+6. Run `npm run dev`.
 
 You should see the default project home page appear and populate itself with data from your participant. ```src/main.tsx``` contains other routes. Navigate to them in your browser to see other pre-build views in action.
 
@@ -23,17 +21,19 @@ You can use or edit one of the existing views, or build your own using [MyDataHe
 
 ### Participant Access Tokens
 
-When running in development mode, you must manually configure an access token so the custom view can get and show participant data. This simulates a participant accessing the view through MyDataHelps.
+Normally, participant authentication is managed by MyDataHelps. When running in development mode, you must manually configure an access token so the custom view can get and show participant data. This simulates a participant accessing the view through MyDataHelps.
 
-First, identify which participant you want to test with. Ideally this will be a fake participant from your test/dry-run project. 
+First, **identify the participant** you want to test with. Ideally this will be a fake participant from your test/dry-run project. 
 
-There are several ways to obtain an access token for the identified participant. Choose any of the following methods:
+Second, **choose which scopes** you will need, depending on which features your test participant will need to access. See [Participant Tokens - Scopes](https://developer.mydatahelps.org/embeddables/participant_tokens.html#scopes) for details. The default dashboard screen requires the following scopes: `Participant:read SurveyTasks:read SurveyAnswers:read Notifications:read DataCollectionSettings:read ExternalAccounts:connect ExternalAccounts:read Project:read`.
+
+Finally, **obtain the token** for the test participant. Choose any of the following methods:
 
 * Log in to mydatahelps.org using that participant. Use the browser developer tools to examine the request to `https://mydatahelps.org/identityserver/connect/token`. The access token will be in the response.
-* Use the [MyDataHelps REST API NodeJS Quickstart](https://github.com/CareEvolution/mydatahelps-rest-api-node-quickstart) or [MyDataHelps REST API Python Quickstart](https://github.com/CareEvolution/mydatahelps-rest-api-python-quickstart) apps to generate a token for your test participant, You will need to edit the code to specify the participant identifier and the necessary scope: `api`.
-* Use the [MyDataHelps REST API](https://developer.mydatahelps.org/embeddables/participant_tokens.html) to generate a token for your test participant. Request the `api` scope.
+* Use the [MyDataHelps REST API NodeJS Quickstart](https://github.com/CareEvolution/mydatahelps-rest-api-node-quickstart) or [MyDataHelps REST API Python Quickstart](https://github.com/CareEvolution/mydatahelps-rest-api-python-quickstart) apps to generate a token for your test participant.
+* Use the [MyDataHelps REST API](https://developer.mydatahelps.org/embeddables/participant_tokens.html) to generate a token for your test participant.
 
-Once you have the token, store it in the `.env.development` file as explained above. 
+Once you have the token, store it in the `.env.development` file as explained above, then run the app. 
 
 **IMPORTANT NOTES:** 
 
