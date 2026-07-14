@@ -16,7 +16,12 @@ import TaskProgress from './components/TaskProgress/TaskProgress';
 import MyDataHelps from '@careevolution/mydatahelps-js';
  
 if (window.location.hostname === "localhost") {
-	MyDataHelps.setParticipantAccessToken({ "access_token": import.meta.env.VITE_PARTICIPANT_ACCESS_TOKEN, "expires_in": 21600, "token_type": "Bearer" }, "https://mydatahelps.org/");
+	let mdh_base_url = import.meta.env.VITE_MDH_BASE_URL || "https://designer.mydatahelps.org/";
+	// Trailing slash is required.
+	if (mdh_base_url.slice(-1) != "/") {
+		mdh_base_url = `${mdh_base_url}/`;
+	}
+	MyDataHelps.setParticipantAccessToken({ "access_token": import.meta.env.VITE_PARTICIPANT_ACCESS_TOKEN, "expires_in": 21600, "token_type": "Bearer" }, mdh_base_url);
 }
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
